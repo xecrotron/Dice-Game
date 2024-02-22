@@ -1,0 +1,2 @@
+To add path for haskell
+    source /home/gitpod/.ghcup/env 
