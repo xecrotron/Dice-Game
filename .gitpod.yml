@@ -6,7 +6,11 @@ tasks:
   - name: Script Task
     before: echo "init script"
     init: echo 'init script' # runs during prebuild => https://www.gitpod.io/docs/configure/projects/prebuilds
-    command: echo 'start script'
+    command: |
+      echo 'start script'
+      source /home/gitpod/.ghcup/env 
+  - name : New Script
+    init: echo "second Script"
 
 # List the ports to expose. Learn more: https://www.gitpod.io/docs/configure/workspaces/ports
 ports:
